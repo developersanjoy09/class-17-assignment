@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/* Start main css this web */
+.header{
+    background-color: black;
+}
+.header-left{
+    width: 30%;
+}
+.header-logu{
+    margin-left: 52%;
+    margin-top: 3%;
+}
+.header-logu img{
+    height: 50px;
+    width: 80px;
+}
+.header-right{
+    width: 70%;
+}
+.header-menu{
+    line-height: 65px;
+    margin-right: -29%;
+}
+.icon{
+    color: #ffff;
+    font-size: 15px;
+}
+.header-menu ul{
+    display: block;
+}
+.header-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.header-menu ul li a{
+    color: #fff;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    transition: .5s;
+}
+.header-menu ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 10%;
+    background: #fff;
+    top: 23px;
+    left: 20px;
+    /* transition: .5s; */
+}
+.header-menu ul li a:hover::before{
+    width: 60%;
+}
+.header-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 170px;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: .5s;
+}
+.header-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.header-menu ul li ul li{
+    display: block;
+}
+.header-menu ul li ul li:hover{
+    background-color: #fff;
+}
+.header-menu ul li ul li a{
+    display: block;
+}
+.header-menu ul li ul li a:hover{
+    color: black;
+}
+.header-menu ul li ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 6%;
+    background: #000;
+    top: 70%;
+    left: 20px;
+}
+.header-menu ul li ul li a:hover::before{
+    width: 40%;
+}
+/* Banner section */
+.banner{
+    background-image: url(./img/Banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    max-width: 100%;
+}
+.banner-text{
+    padding-top: 10%;
+    margin-left: 17%;
+}
+.start{
+    padding: 15px 20px;
+    background-color: black;
+    color: #ffff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+.start:hover{
+    background-color: #fff;
+    color: black;
+    transition: .8s;
+    border: 1px solid black;
+}
+.contact{
+    padding: 15px 25px;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.contact:hover{
+    background-color: black;
+    color: #FFFF;
+    transition: .8s;
+}
+.banner-text h1{
+    color: #223127;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.banner-text h4{
+    font-size: 20px;
+    text-transform: lowercase;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+/* Start about section */
+.about-section{
+    height: 400px;
+    max-width: 100%;
+    background-color: #87a471;
+}
+.about-section h1{
+    display: inline-block;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #dddd;
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-bottom: 3px solid ;
+    text-shadow: 2px 2px 4px white;
+}
+.pdiv{
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 13%;
+    text-align: start;
+    color: #ffff;
+    font-family: sans-serif;
+}
+.about-img{
+    width: 60%;
+    margin-top: -16%;
+}
+.about-img img{
+    height: 250px;
+    width: 250px;
+}
+/* what i do */
+.what{
+    background-color: #606a64;
+    max-width: 100%;
+    height: 500px;
+}
+.what-text{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #e8dfda;
+}
+.what-text h1{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 40px;
+    display: inline-block;
+    border-bottom: 2px solid #ddd;
+}
+.what-text h2{
+    color: #dfe0e1;
+    font-family: sans-serif;
+    padding: 10px 0;
+}
+.all-box{
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 5%;
+}
+.box{
+    width: 300px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px  20px;
+    margin-right: 50px;
+    font-family: sans-serif;
+}
+.img1{
+    width: 10%;
+}
+.img-text{
+    width: 80%;
+    text-align: left;
+    margin-right: 5px;
+}
+/* check out */
+.check-text{
+    padding-bottom: 50px;
+}
+.check-text h1{
+    color: #fff;
+}
+.check-text p{
+    color: #ddd;
+}
+.check-out{
+    max-width: 100%;
+    background-color: #87a471;
+    font-family: sans-serif;
+}
+.check-img{
+    width: 1050px;
+    margin: auto;
+    text-align: center;
+}
+.img-check{
+    border: 1px solid #fff;
+    padding-bottom: 20px;
+}
+.img-check img{
+    width: 500px;
+    height: 400px;
+    padding-bottom: 10px;
+}
+.img-div{
+    text-align: center;
+}
+.img-div1{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    padding: 40px;
+}
+.img-check p{
+    color: #506a85;
+    font-weight: bold;
+}
+.img-check span{
+    color: #fff;
+    font-weight: bold;
+}
+/* my teem */
+.teem{
+    background-color: #5b9776;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.teem h1{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    margin: 40px 0;
+}
+.teem-img{
+    display: inline-block;
+}
+.soical{
+    font-size: 30px;
+    color: #ffff;
+}
+/*  want  */
+.want{
+    text-align: center;
+    background-color: #606a64;
+    color: #ddd;
+    padding: 100px 0;
+    font-family: sans-serif;
+}
+.want-text h1{
+    font-size: 40px;
+}
+.get{
+    padding: 8px 20px;
+    background-color: #00bc9c;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+.get:hover{
+    background-color: #364a57;
+    transition: .5s;
+    cursor: pointer;
+}
+.soical{
+    padding: 5px;
+}
+.soical:hover{
+    color: #606a64;
+    transition: .5s;
+}
+/* footer */
+.footer{
+    background-color: black;
+    color: #ffff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: sans-serif;
+}
